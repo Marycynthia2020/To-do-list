@@ -172,4 +172,7 @@ body {
   li {
     gap: 2px
   }
+  #new-task{
+    width: 80%
+  }
   }
