@@ -7,17 +7,32 @@ inputField.focus()
 
 addButton.addEventListener("click", addItem);
 
+// why is my own not working
+// inputField.addEventListener('keypress', (event) => {
+//     if() {
+//         // addItem()
+//         addButton.click()
+//         console.log('may')
+//     }
+// })
+// // onkeydown="isKeyPressed(event)"
+// const isKeyPressed = (event) => {
+//     if(event.shiftKey) {
+//         addButton.click()
+//     }
+
+// }
+
 function addItem() {
     let value = inputField.value;
     let listElement = document.createElement('li');
-
     if(inputField.value !== '') {
         listElement.innerHTML = ` <p>${value}</p>
         <button id="edit-button">Edit</button>
         <button id="delete-button">Delete</button>`;
-        // let todoList = [] how do i make this todolist an array, so that the latest one can always be at the top
-        todoList.prepend(listElement);
-       
+
+
+        todoList.prepend(listElement)  
         inputField.value = '';
         
     }
@@ -27,6 +42,7 @@ function addItem() {
 
     let editButton = listElement.querySelector('#edit-button');
     editButton.addEventListener('click', editItem);
+
 }
 
 

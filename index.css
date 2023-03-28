@@ -4,7 +4,7 @@ body {
     background: #fff;
     color: #333;
     font-family: Lato, sans-serif;
-    background-color: skyblue;
+    background-color: rgb(89, 113, 89);
   }
   
   .container {
@@ -161,4 +161,15 @@ body {
   
   #clear-button  {
     background-color: red;
+  }
+
+
+@media (max-width: 500px) {
+.container {
+    width: 80%
+  }
+
+  li {
+    gap: 2px
+  }
   }
